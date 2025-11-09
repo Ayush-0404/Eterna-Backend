@@ -12,11 +12,11 @@ A production-ready, high-performance order execution engine built with Node.js a
 
 ## 🔗 Quick Links
 
-- **🎥 Demo Video**: [Watch on YouTube](https://www.youtube.com/watch?v=DeDFly4JD9A)
-- **🚀 Live Deployment**: https://eterna-backend-production-38e4.up.railway.app
-- **📮 Postman Collection**: [Download here](./postman/collection.json)
-- **💻 GitHub Repository**: https://github.com/Ayush-0404/Eterna-Backend
-- **📋 Final Deliverables**: [View Checklist](./FINAL_SUBMISSION.md)
+- ** Demo Video**: [Watch on YouTube](https://www.youtube.com/watch?v=DeDFly4JD9A)
+- ** Live Deployment**: https://eterna-backend-production-38e4.up.railway.app
+- ** Postman Collection**: [Download here](./postman/collection.json)
+- ** GitHub Repository**: https://github.com/Ayush-0404/Eterna-Backend
+- ** Final Deliverables**: [View Checklist](./FINAL_SUBMISSION.md)
 ---
 
 ##  Project Highlights
@@ -49,14 +49,14 @@ A production-ready, high-performance order execution engine built with Node.js a
 
 ## ✨ Features
 
-- **🎯 Market Order Execution** - Immediate execution at best available price
-- **🔄 Smart DEX Routing** - Automatic price comparison between Raydium and Meteora
-- **📡 Real-Time Updates** - WebSocket streaming of order lifecycle events
-- **⚡ Concurrent Processing** - Queue system handling 10 simultaneous orders
-- **🔁 Automatic Retries** - Exponential backoff with up to 3 retry attempts
-- **📊 Production-Ready** - Comprehensive error handling, logging, and monitoring
-- **🧪 Well-Tested** - 80%+ code coverage with unit and integration tests
-- **🏗️ Extensible Architecture** - Factory pattern for adding new order types
+- ** Market Order Execution** - Immediate execution at best available price
+- ** Smart DEX Routing** - Automatic price comparison between Raydium and Meteora
+- ** Real-Time Updates** - WebSocket streaming of order lifecycle events
+- ** Concurrent Processing** - Queue system handling 10 simultaneous orders
+- ** Automatic Retries** - Exponential backoff with up to 3 retry attempts
+- ** Production-Ready** - Comprehensive error handling, logging, and monitoring
+- ** Well-Tested** - 80%+ code coverage with unit and integration tests
+- ** Extensible Architecture** - Factory pattern for adding new order types
 
 ---
 
@@ -481,7 +481,7 @@ Worker → Redis Pub → Redis Sub → WebSocket Service → Client
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 ### Run All Tests
 
@@ -607,15 +607,11 @@ Contributions welcome! Please follow these steps:
 
 ---
 
-## 📄 License
-
-MIT License - see [LICENSE](LICENSE) file for details
-
----
 
 ## 📧 Contact
 
-For questions or support, please open an issue on GitHub.
+For questions or support, please open an issue on GitHub,
+or contact on ayush22125@iiitd.ac.in
 
 ---
 
@@ -626,7 +622,7 @@ For questions or support, please open an issue on GitHub.
 - [Prisma](https://www.prisma.io/) - Next-generation ORM
 - [Zod](https://zod.dev/) - TypeScript-first schema validation
 
-- AI tool help to fasten the process and have efficient execution.
+- AI tool help taken to fasten the process and have efficient execution.
 ---
 
 **Built with ❤️ by Ayush using TypeScript and Node.js**
