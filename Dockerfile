@@ -41,16 +41,15 @@ RUN npm ci --only=production && \
 # Copy built application from builder
 COPY --from=builder /app/dist ./dist
 
-# Copy entrypoint script
-COPY docker-entrypoint.sh ./
-RUN chmod +x docker-entrypoint.sh
-
 # Create non-root user
 RUN addgroup -g 1001 -S nodejs && \
     adduser -S nodejs -u 1001
 
-# Change ownership of app files (but not entrypoint yet)
+# Change ownership of app files
 RUN chown -R nodejs:nodejs /app/dist /app/node_modules /app/prisma
+
+# Switch to nodejs user
+USER nodejs
 
 # Expose port
 EXPOSE 3000
@@ -59,5 +58,5 @@ EXPOSE 3000
 HEALTHCHECK --interval=30s --timeout=3s --start-period=40s \
   CMD node -e "require('http').get('http://localhost:3000/health', (r) => {process.exit(r.statusCode === 200 ? 0 : 1)})"
 
-# Run as root to execute migrations, then switch to nodejs user for app
-ENTRYPOINT ["./docker-entrypoint.sh"]
+# Start application - migrations run in Railway's start command
+CMD ["node", "dist/index.js"]
