@@ -12,14 +12,14 @@ A production-ready, high-performance order execution engine built with Node.js a
 
 ## 🔗 Quick Links
 
-- **📺 Demo Video**: [Watch on YouTube](#) *(Recording in progress)*
-- **🔴 Live Deployment**: https://eterna-backend-production-38e4.up.railway.app
-- **📮 Postman Collection**: [Download here](./postman/collection.json)
-- **📊 GitHub Repository**: https://github.com/Ayush-0404/Eterna-Backend
-- **📋 Final Deliverables**: [View Checklist](./FINAL_SUBMISSION.md)
+- ** Demo Video**: [Watch on YouTube](#) *(Recording in progress)*
+- ** Live Deployment**: https://eterna-backend-production-38e4.up.railway.app
+- ** Postman Collection**: [Download here](./postman/collection.json)
+- ** GitHub Repository**: https://github.com/Ayush-0404/Eterna-Backend
+- ** Final Deliverables**: [View Checklist](./FINAL_SUBMISSION.md)
 ---
 
-## 🎯 Project Highlights
+##  Project Highlights
 
 - ✅ **44 Unit Tests** - All passing with comprehensive coverage
 - ✅ **8 Postman Tests** - Automated API testing with validation
@@ -59,7 +59,7 @@ A production-ready, high-performance order execution engine built with Node.js a
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -110,7 +110,7 @@ A production-ready, high-performance order execution engine built with Node.js a
 
 ---
 
-## 🎯 Why Market Orders?
+##  Why Market Orders?
 
 ### Choice Rationale
 
@@ -171,7 +171,7 @@ export class LimitOrderExecutor implements IOrderExecutor {
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -533,7 +533,7 @@ src/tests/
 
 ---
 
-## 🚢 Deployment
+##  Deployment
 
 ### Docker Deployment
 
@@ -623,6 +623,7 @@ For questions or support, please open an issue on GitHub.
 - [Prisma](https://www.prisma.io/) - Next-generation ORM
 - [Zod](https://zod.dev/) - TypeScript-first schema validation
 
+- AI tool help to fasten the process and have efficient execution.
 ---
 
-**Built with ❤️ using TypeScript and Node.js**
+**Built with ❤️ by Ayush using TypeScript and Node.js**
