@@ -28,6 +28,7 @@ A production-ready, high-performance order execution engine built with Node.js a
 - ✅ **9ms Average Response** - Ultra-fast order submission
 - ✅ **WebSocket Live Updates** - Real-time order lifecycle streaming
 - ✅ **Smart DEX Routing** - Automatic best price selection
+- ✅ **Docker Support** - Multi-stage build with production optimizations
 
 ---
 
@@ -168,6 +169,8 @@ export class LimitOrderExecutor implements IOrderExecutor {
 | **Validation** | Zod 3.x | Runtime schema validation |
 | **Testing** | Jest 29.x | Unit + integration tests |
 | **Logging** | Pino 8.x | Structured JSON logging |
+| **Containerization** | Docker + Docker Compose | Local development & deployment |
+| **Deployment** | Railway | Production hosting |
 
 ---
 
