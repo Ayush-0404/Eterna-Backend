@@ -63,14 +63,6 @@ npm run test:coverage
 npm run load:test
 ```
 
-### 5. Deploy to Production
-
-See `SETUP.md` for detailed deployment instructions to:
-- Render.com (Free tier)
-- Railway.app (Free tier)
-- Docker container (Any cloud platform)
-
----
 
 ## 📂 File Structure Overview
 
@@ -152,14 +144,10 @@ Attempt 3: Fail → Wait 4s  → Mark as "failed"
 ## 🧪 Testing Overview
 
 ### Unit Tests (22 tests)
-- ✅ DEX Router: Price comparison, delays, slippage
-- ✅ Market Order Executor: Validation, state machine, errors
-- ✅ Helper Functions: ID generation, backoff, formatting
+- DEX Router: Price comparison, delays, slippage
+-  Market Order Executor: Validation, state machine, errors
+-  Helper Functions: ID generation, backoff, formatting
 
-### Integration Tests (To Add)
-- End-to-end order flow (POST → WS → DB)
-- Concurrent processing (10 simultaneous orders)
-- WebSocket connection lifecycle
 
 ### Load Testing
 ```bash
@@ -185,33 +173,6 @@ npm run load:test
 
 ---
 
-## 🎥 Demo Video Guide
-
-### What to Show (1-2 minutes)
-
-1. **Start System** (15s)
-   - `docker compose up -d`
-   - `npm run dev`
-
-2. **Submit Single Order** (20s)
-   - Use Postman
-   - Show WebSocket updates in real-time
-   - Highlight DEX routing logs
-
-3. **Concurrent Orders** (25s)
-   - Submit 5-10 orders at once
-   - Show `/api/orders/stats` endpoint
-   - Demonstrate queue behavior
-
-4. **Database Persistence** (10s)
-   - Show order records in Prisma Studio
-   - Highlight txHash and executedPrice
-
-5. **Code Tour** (20s)
-   - Show key files (executor, router, worker)
-   - Mention extensibility (limit/sniper orders)
-
----
 
 ## 🔧 Troubleshooting
 
@@ -261,20 +222,10 @@ npm test
 
 ---
 
-## 📚 Documentation Files
-
-| File | Purpose |
-|------|---------|
-| **README.md** | Architecture, API docs, design decisions |
-| **SETUP.md** | Step-by-step setup instructions |
-| **DELIVERABLES.md** | Project summary & checklist |
-| **THIS FILE** | Quick reference & next steps |
-
----
 
 ## 🎓 Learning Outcomes
 
-By building this project, you've implemented:
+By building this project, I have learnt and implemented:
 
 1. **Queue-Based Architecture** with BullMQ
 2. **Real-Time Communication** with WebSocket
@@ -285,18 +236,4 @@ By building this project, you've implemented:
 7. **Production Best Practices** (logging, error handling, testing)
 
 ---
-
-## ✅ Final Checklist
-
-- [ ] Read SETUP.md and follow setup steps
-- [ ] Install Docker and start containers
-- [ ] Run database migrations
-- [ ] Start development server
-- [ ] Import Postman collection
-- [ ] Submit test orders
-- [ ] Run unit tests (`npm test`)
-- [ ] Run load test (`npm run load:test`)
-- [ ] Deploy to hosting platform
-- [ ] Record demo video
-- [ ] Submit GitHub repo link
 
