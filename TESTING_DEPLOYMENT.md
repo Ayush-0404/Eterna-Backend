@@ -1,6 +1,6 @@
-# 🧪 Deployment Testing Guide
+#  Deployment Testing Guide
 
-## 📋 What We Just Fixed
+##  Fixes ( you can look into this doc if any error occur while testing )
 
 ### 1. **Database Migration** (Auto-runs on startup)
 
@@ -27,7 +27,7 @@ Every time Railway starts your app, it runs migration first!
 
 ---
 
-## 🚀 Testing Your Deployed App
+##  Testing Your Deployed App
 
 ### **Step 1: Get Your Railway URL**
 
@@ -40,7 +40,7 @@ Every time Railway starts your app, it runs migration first!
 
 ---
 
-### **Step 2: Test Health Endpoint** ✅
+### **Step 2: Test Health Endpoint** 
 
 **Why test this first?**
 - Verifies server is running
