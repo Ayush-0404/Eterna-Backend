@@ -25,8 +25,8 @@ RUN npm run build
 # Production stage
 FROM node:20-alpine AS production
 
-# Install OpenSSL for Prisma (needed in production too)
-RUN apk add --no-cache openssl libc6-compat
+# Install OpenSSL and su-exec for Prisma and user switching
+RUN apk add --no-cache openssl libc6-compat su-exec
 
 WORKDIR /app
 
@@ -49,11 +49,8 @@ RUN chmod +x docker-entrypoint.sh
 RUN addgroup -g 1001 -S nodejs && \
     adduser -S nodejs -u 1001
 
-# Change ownership
-RUN chown -R nodejs:nodejs /app
-
-# Switch to non-root user
-USER nodejs
+# Change ownership of app files (but not entrypoint yet)
+RUN chown -R nodejs:nodejs /app/dist /app/node_modules /app/prisma
 
 # Expose port
 EXPOSE 3000
@@ -62,5 +59,5 @@ EXPOSE 3000
 HEALTHCHECK --interval=30s --timeout=3s --start-period=40s \
   CMD node -e "require('http').get('http://localhost:3000/health', (r) => {process.exit(r.statusCode === 200 ? 0 : 1)})"
 
-# Start application with migrations
+# Run as root to execute migrations, then switch to nodejs user for app
 ENTRYPOINT ["./docker-entrypoint.sh"]

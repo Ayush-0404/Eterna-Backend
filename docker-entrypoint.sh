@@ -6,4 +6,4 @@ npx prisma migrate deploy
 
 echo "✅ Migrations completed successfully"
 echo "🚀 Starting application..."
-exec node dist/index.js
+exec su-exec nodejs node dist/index.js
