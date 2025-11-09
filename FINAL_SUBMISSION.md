@@ -1,14 +1,12 @@
 # 📋 Eterna Backend - Final Deliverables Checklist
 
 **Project:** Order Execution Engine with DEX Routing  
-**Status:** ✅ Ready
 
 ---
 
 ## Criteria Met
 
 ### 1. DEX Router Implementation with Price Comparison
-**Status:** ✅ COMPLETE
 
 - **Implementation:** `src/services/dex-router.service.ts`
 - **Features:**
