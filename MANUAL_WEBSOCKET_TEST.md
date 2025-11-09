@@ -1,6 +1,6 @@
-# Manual WebSocket Testing Guide
+# Manual WebSocket Testing Guide ( help )
 
-## ✅ What We've Done
+##  What I've Done
 
 1. **Added Delays to Order Execution**
    - Routing: 3 seconds
@@ -14,13 +14,13 @@
    - `monitor-order.ts` - Connect to WebSocket for specific order
    - `websocket-final-test.ts` - Automated test
 
-## 🔧 Issue Identified
+## Issue Identified
 
 The WebSocket **connections work** but messages aren't being received. This is likely because:
 - The Redis pub/sub might need the server to restart
 - Or there's a timing issue with subscription registration
 
-## ✅ **RECOMMENDED TESTING METHOD**
+##  ** TESTING METHOD (recomm) **
 
 ### Watch Server Logs (Easiest & Most Reliable)
 
@@ -69,7 +69,7 @@ Replace `ord_XXXX_XXXX` with your actual order ID.
 
 ---
 
-## 📊 What You Should See (in Server Logs)
+##  What You Should See (in Server Logs)
 
 ```
 [INFO] Processing order: ord_XXXX
@@ -85,7 +85,7 @@ Replace `ord_XXXX_XXXX` with your actual order ID.
 
 ---
 
-## ✅ Summary
+##  Summary
 
 **All 4 Steps Status:**
 
@@ -96,6 +96,6 @@ Replace `ord_XXXX_XXXX` with your actual order ID.
 | 3. WebSocket | ⚠️ PARTIAL | Connections work, check server logs for updates |
 | 4. Postman | 📋 READY | Follow POSTMAN_GUIDE.md to import |
 
-**Best way to see order execution flow: Watch your server terminal! 🎯**
+**Best way to see order execution flow: Watch your server terminal! **
 
 The delays are now long enough (10+ seconds total) that you can easily follow the order progression in real-time.
