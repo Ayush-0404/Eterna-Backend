@@ -12,11 +12,11 @@ A production-ready, high-performance order execution engine built with Node.js a
 
 ## 🔗 Quick Links
 
-- ** Demo Video**: [Watch on YouTube](#) *(Recording in progress)*
-- ** Live Deployment**: https://eterna-backend-production-38e4.up.railway.app
-- ** Postman Collection**: [Download here](./postman/collection.json)
-- ** GitHub Repository**: https://github.com/Ayush-0404/Eterna-Backend
-- ** Final Deliverables**: [View Checklist](./FINAL_SUBMISSION.md)
+- **🎥 Demo Video**: [Watch on YouTube](https://www.youtube.com/watch?v=DeDFly4JD9A)
+- **🚀 Live Deployment**: https://eterna-backend-production-38e4.up.railway.app
+- **📮 Postman Collection**: [Download here](./postman/collection.json)
+- **💻 GitHub Repository**: https://github.com/Ayush-0404/Eterna-Backend
+- **📋 Final Deliverables**: [View Checklist](./FINAL_SUBMISSION.md)
 ---
 
 ##  Project Highlights
