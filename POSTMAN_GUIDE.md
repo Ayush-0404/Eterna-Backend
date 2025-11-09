@@ -1,6 +1,5 @@
-# Postman Collection Testing Guide
+# Postman Collection Testing Guide -
 
-## How to Import and Use the Collection
 
 ### Step 1: Import Collection
 
@@ -107,7 +106,7 @@ Test different combinations:
 2. Click **Run** button
 3. Select requests to run
 4. Click **Run Order Execution Engine API**
-5. Watch automated tests pass! ✅
+5. Watch automated tests pass! 
 
 The collection includes automated tests that check:
 - ✅ Status codes
