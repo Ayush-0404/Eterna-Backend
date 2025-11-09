@@ -7,6 +7,7 @@
     "dev": "tsx watch src/index.ts",
     "build": "tsc",
     "start": "node dist/index.js",
+    "postinstall": "prisma generate",
     "lint": "eslint src/**/*.ts",
     "format": "prettier --write \"src/**/*.ts\"",
     "test": "jest",
@@ -26,6 +27,9 @@
     "setup": "npm install && npx prisma generate",
     "setup:full": "npm install && npx prisma generate && npx prisma migrate dev",
     "clean": "rimraf dist coverage node_modules/.cache"
+  },
+  "engines": {
+    "node": ">=20.0.0"
   },
   "keywords": [
     "order-execution",
