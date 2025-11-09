@@ -1,4 +1,4 @@
-# 🚀 Order Execution Engine
+#  Order Execution Engine
 
 A production-ready, high-performance order execution engine built with Node.js and TypeScript. Features intelligent DEX routing (Raydium vs Meteora), real-time WebSocket status updates, and concurrent order processing with queue management.
 
