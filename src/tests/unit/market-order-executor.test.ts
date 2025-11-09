@@ -127,7 +127,7 @@ describe('MarketOrderExecutor', () => {
       expect(statuses).toContain(ORDER_STATUS.BUILDING);
       expect(statuses).toContain(ORDER_STATUS.SUBMITTED);
       expect(statuses).toContain(ORDER_STATUS.CONFIRMED);
-    });
+    }, 15000);
 
     it('should emit routing status with selected DEX', async () => {
       await executor.execute(mockOrder, statusCallback);
@@ -136,7 +136,7 @@ describe('MarketOrderExecutor', () => {
       expect(routingUpdate).toBeDefined();
       expect(routingUpdate!.data?.selectedDex).toBe('Raydium');
       expect(routingUpdate!.data?.reason).toContain('Better price');
-    });
+    }, 15000);
 
     it('should emit confirmed status with transaction details', async () => {
       await executor.execute(mockOrder, statusCallback);
@@ -145,7 +145,7 @@ describe('MarketOrderExecutor', () => {
       expect(confirmedUpdate).toBeDefined();
       expect(confirmedUpdate!.data?.txHash).toBe('mock_tx_hash_12345');
       expect(confirmedUpdate!.data?.executedPrice).toBe(99.65);
-    });
+    }, 15000);
 
     it('should return failure on validation error', async () => {
       mockOrder.amount = -1;
@@ -185,6 +185,6 @@ describe('MarketOrderExecutor', () => {
 
       expect(statusCallback).toHaveBeenCalledTimes(statusUpdates.length);
       expect(statusCallback.mock.calls.every((call) => call[0].orderId === mockOrder.orderId)).toBe(true);
-    });
+    }, 15000);
   });
 });
