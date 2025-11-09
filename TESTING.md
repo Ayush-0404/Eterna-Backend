@@ -361,39 +361,6 @@ open coverage/lcov-report/index.html
 
 ---
 
-## Demo Video Checklist
-
-### Part 1: Code Tour (30s)
-- Show project structure
-- Highlight key files (executor, router, worker)
-- Mention extensibility design
-
-### Part 2: Unit Tests (20s)
-- Run `npm test`
-- Show 44/44 tests passing
-- Mention 80%+ coverage target
-
-### Part 3: API Testing (30s)
-- Start server
-- Submit order via Postman
-- Show successful response with orderId
-
-### Part 4: Concurrent Processing (30s)
-- Submit 5-10 orders simultaneously
-- Show queue stats endpoint
-- Highlight concurrent processing in logs
-
-### Part 5: Logs & Routing (10s)
-- Show DEX routing decisions in console
-- Highlight "Better price" selection reasoning
-
-### Part 6: Wrap-up (10s)
-- Mention GitHub repo
-- Thank you
-
-**Total: ~2 minutes**
-
----
 
 ## Summary
 
@@ -403,6 +370,5 @@ open coverage/lcov-report/index.html
 ✅ **Load Test Script** - Performance testing ready
 ✅ **Documentation** - Complete guides available
 
-**The system is fully tested and ready for demonstration!**
 
 For deployment, see `SETUP.md` for cloud service integration.
