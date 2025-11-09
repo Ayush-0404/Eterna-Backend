@@ -15,8 +15,6 @@ A production-ready, high-performance order execution engine built with Node.js a
 - **📺 Demo Video**: [Watch on YouTube](#) *(Add your video link here)*
 - **🔴 Live Demo**: [Try it now](#) *(https://eterna-backend-production-38e4.up.railway.app/)*
 - **📮 Postman Collection**: [Download here](./postman/collection.json)
-- **📊 GitHub Repository**: [View Source](#) *(Add your GitHub URL here)*
-
 ---
 
 ## 🎯 Project Highlights
