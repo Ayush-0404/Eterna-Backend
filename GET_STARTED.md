@@ -1,4 +1,4 @@
-
+Details with troubleshoot - 
 ---
 
 ## Steps
@@ -161,7 +161,7 @@ npm run load:test
 
 ---
 
-## 📊 Performance Expectations
+##  Performance Expectations
 
 | Metric | Target | Notes |
 |--------|--------|-------|
